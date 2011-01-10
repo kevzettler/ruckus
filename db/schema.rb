@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20110107041612) do
   create_table "pages", :force => true do |t|
     t.string   "title"
     t.string   "content"
+    t.boolean  "trash",      :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

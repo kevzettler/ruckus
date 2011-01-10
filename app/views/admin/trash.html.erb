@@ -1,0 +1,47 @@
+<h2>trashcan</h2><p><strong>Deleted items are listed here. You can take a look at them, restore them or delete them from the trashcan.</strong></p> 
+ 
+<div class="menudiv"> 
+	<table> 
+		<tr> 
+			<td> 
+				<img src="images/trash-full-big.png" /> 
+			</td> 
+			<td> 
+				<%= @trash.length %> items in trashcan				
+				<% if @trash.length > 0 %>
+				<br /> 
+				<a href="/empty_trash" onclick="return confirm('Are you sure you want to empty the trashcan? Please note that all items will be lost.');">empty trashcan</a> 
+				<% end %>
+			</td> 
+		</tr> 
+	</table> 
+</div> 
+
+<!--
+<span class="kop2">pages</span><br> 
+		<div class="menudiv"> 
+			<table> 
+				<tr> 
+					<td> 
+						<img src="images/page.png" alt=""> 
+					</td> 
+					<td style="width: 350px;"> 
+						<span style="font-size: 17pt;">trash</span> 
+					</td> 
+					<td> 
+						<a href="?trash_viewitem=kop2.php&amp;cat=page"><img src="images/view.png" alt="view item" title="view item"></a> 
+					</td> 
+					<td> 
+						<a href="?trash_restoreitem=kop2.php&amp;cat=page"><img src="images/restore.png" title="restore item" alt="restore item"></a> 
+					</td> 
+					<td> 
+						<a href="?trash_deleteitem=kop2.php&amp;cat=page"><img src="images/delete_from_trash.png" title="delete item from trashcan" alt="delete item from trashcan"></a> 
+					</td> 
+				</tr> 
+			</table> 
+		</div> 
+	<br /><br /> 
+<span class="kop2">images</span> 
+<br /> 
+
+-->

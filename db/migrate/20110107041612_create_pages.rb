@@ -3,6 +3,7 @@ class CreatePages < ActiveRecord::Migration
     create_table :pages do |t|
       t.string :title
       t.string :content
+      t.boolean :trash, {:default => false}
 
       t.timestamps
     end

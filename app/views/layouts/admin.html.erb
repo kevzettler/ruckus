@@ -46,11 +46,10 @@
 	</div> 
 	<h1>Ruckus</h1> 
 	<div id="statusbox"> 
-		<!--
 		<div> 
-	<a href="?action=trashcan"><img src="/images/trash.png" alt="trashcan" title="trashcan" /></a> 
-	0 items in trashcan</div> 
-	-->
+			<a href="/trash"><img src="/images/trash.png" alt="trashcan" title="trashcan" /></a> 
+			<a href="/trash" style="color:#000;"><%= @trash.length %> items in trashcan</a>
+		</div> 
 		<div> 
 	<img src="/images/update-no.png" alt="" /> 
 	ruckus is up-to-date</div> 
@@ -59,7 +58,7 @@
  
 <div id="text">
 <%= yield %> 
-<div id="somp">pluck &copy; 2005-2010 <a href="http://www.pluck-cms.org" target="_blank">pluck project</a>. pluck is available under the terms of the GNU General Public License.</div> 
+<div id="somp">Thanks for using Ruckus!</div> 
 </div> 
 </body> 
 </html>

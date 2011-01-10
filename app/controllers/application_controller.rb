@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   layout :layout_by_resource
   
   def setpages
-    @pages = Page.all
+    @pages = Page.where("trash = ?", false)
+    @trash = Page.where("trash = ?", true)
   end
   
   def layout_by_resource

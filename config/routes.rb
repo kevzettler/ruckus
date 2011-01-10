@@ -1,11 +1,13 @@
 Ruckus::Application.routes.draw do
 
-  namespace :admin do resources :pages end
-
   resources :pages
 
   devise_for :users
   
+  match '/empty_trash' => 'pages#empty_trash'
+  match '/trash' => "admin#trash"
+  
+  match '/pages/:id/trash' => 'pages#trash'
   match '/:title/' => 'pages#show'
   
   # The priority is based upon order of creation:
